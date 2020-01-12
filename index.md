@@ -39,7 +39,8 @@ Syntax highlighted code block
  -会写博客了....这个应该也算是进度吧...【乖巧.jpg】
 ### 四
  -那个。。。我是真的不会调主题了，你的主题真的nice，我在网上找的教程我试了不少，总是卡在用hexo和git建立新主题文件夹的时候。
-
+### 五
+ -虽然你没要求，但是放假前你让我自学一下ps和xd，ps我跟着软件里的教程，还剩几个，应该算是入门了吧。xd不算太难，我在B站上看了些视频，实际操作了一下，感觉凑合，目前水平应该跟用c写hello world一个层次吧.......【对不起！我丢脸了！最近研究GitHub和MySQL比较多】
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
