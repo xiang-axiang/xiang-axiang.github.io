@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## 欢迎来到菜狗高启翔的个人博客
 
 You can use the [editor on GitHub](https://github.com/xiang-axiang/xiang-axiang.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -11,9 +11,10 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+#近期任务完成情况
+ -http协议学完了，主要还是有个别专业名词不懂，不过正在查找资料，周天下午就能完成
+ -MySQL数据库正在B站听课，买的《MySQL必知必会》也到了，只不过我在官网下载MySQL很奇怪，下载速度会越来越慢，不知道为什么。
+ -那个。。。我是真的不会调主题了，你的主题真的nice，我在网上找的教程我试了不少，总是卡在用hexo和git建立新主题文件夹的时候。
 
 - Bulleted
 - List
