@@ -30,6 +30,505 @@ Syntax highlighted code block
 我似乎把学习进度写到不该写的地方了......
 不过问题不大，把它留着，做一个警示吧
 
+#### 一个闲的没事儿干整的代码，应该能简化好多
+```markdown
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+void plus();
+void sub();
+void mul();
+void temp();
+
+void menu()
+{
+	printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf("欢迎小朋友和我一起学习算数，细心作答，你是最棒的。加油哦!");
+	printf("\n");                                                  
+	printf("1.加法\n");
+	printf("2.减法\n");
+	printf("3.乘法\n");
+	printf("4.除法\n");
+	printf("0.退出\n");
+    printf("\n");
+    printf("赶快选择你要学习的内容吧!其中,每类按难易程度均有三个关卡");
+	printf("\n");
+	printf("$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$-$\n");
+}
+void plus1()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第一关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{
+		printf("%d",m=rand()%10);
+		printf("+");
+		printf("%d",n=rand()%10);
+		printf("=");
+		total=m+n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void plus2()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第二关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{
+	do{
+		m=rand()%100;
+	    n=rand()%10;
+	}
+	while(m<10);
+		printf("%d",m);
+		printf("+");
+		printf("%d",n);
+		printf("=");
+		total=m+n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void plus3()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第三关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{
+	do{
+		m=rand()%100;
+	    n=rand()%100;
+	}
+	while(m<=n||m<10||n<10);
+		printf("%d",m);
+		printf("+");
+		printf("%d",n);
+		printf("=");
+		total=m+n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void plus()
+{
+	int i;
+	plus1();
+	printf("是否继续挑战?Y(1)/N(0):");
+	scanf("%d",&i);
+	if(i==1)
+		plus2();
+	else
+		return;
+	i=0;
+	printf("是否继续挑战?Y(1)/N(0)");
+	scanf("%d",&i);
+	if(i==1)
+		plus3();
+	else
+		return;
+}
+void sub1()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第一关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k){
+	do
+	{
+		m=rand()%10;
+	    n=rand()%10;
+	}
+	while(m<=n);
+		printf("%d",m);
+		printf("-");
+		printf("%d",n);
+		printf("=");
+		total=m-n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+  			  printf("恭喜通关!继续努力哦!\n");
+    }
+}
+void sub2()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第二关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{
+	do{
+		m=rand()%100;
+	    n=rand()%10;
+	}
+	while(m<10);
+		printf("%d",m);
+		printf("-");
+		printf("%d",n);
+		printf("=");
+		total=m-n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void sub3()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第三关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{do{
+		m=rand()%100;
+	    n=rand()%100;
+	}while(m<=n||m<10||n<10);
+		printf("%d",m);
+		printf("-");
+		printf("%d",n);
+		printf("=");
+		total=m-n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void sub()
+{
+	int i;
+    sub1();
+	printf("是否继续挑战?Y(1)/N(0):");
+	scanf("%d",&i);
+	if(i==1)
+		sub2();
+	else
+		return;
+	i=0;
+	printf("是否继续挑战?Y(1)/N(0)");
+	scanf("%d",&i);
+	if(i==1)
+		sub3();
+	else
+		return;
+}
+void mul1()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第一关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{
+		printf("%d",m=rand()%10);
+		printf("*");
+		printf("%d",n=rand()%10);
+		printf("=");
+		total=m*n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void mul2()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第二关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{do{
+		m=rand()%100;
+	    n=rand()%10;
+	}while(m<10);
+		printf("%d",m);
+		printf("*");
+		printf("%d",n);
+		printf("=");
+		total=m*n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void mul3()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第三关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{do{
+		m=rand()%100;
+	    n=rand()%100;
+	}while(m<=n||m<10||n<10);
+		printf("%d",m);
+		printf("*");
+		printf("%d",n);
+		printf("=");
+		total=m*n;
+        loopa:scanf("%d,&s");
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void mul()
+{
+    int i;
+	mul1();
+	printf("是否继续挑战:Y(1)/N(0)");
+	scanf("%d",&i);
+	if(i==1)
+		mul2();
+	else
+		return;
+	i=0;
+	printf("是否继续挑战?Y(1)/N(0)");
+	scanf("%d",&i);
+	if(i==1)
+		mul3();
+	else
+		return;
+}
+void temp1()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第一关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d,&k");
+	while(count<0.9*k)
+	{do{
+		m=rand()%10;
+		n=rand()%10;
+	}while(n==0||m%n!=0);
+		printf("%d,m=rand()%10");
+		printf("/");
+		printf("%d,n=rand()%10");
+		printf("=");
+		total=m/n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void temp2()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第二关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d,&k");
+	while(count<0.9*k)
+	{
+	do{
+		m=rand()%100;
+	    n=rand()%10;
+	}
+	while(n==0||m<10||m%n!=0);
+		printf("%d",m);
+		printf("/");
+		printf("%d",n);
+		printf("=");
+		total=m/n;
+        loopa:scanf("%d",&s);
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void temp3()
+{
+	int count=0,m,n,s=0,total,k=0;
+	printf("欢迎你来到第三关!\n");
+	printf("请先设定本关题目的数量:");
+	scanf("%d",&k);
+	while(count<0.9*k)
+	{do{
+		m=rand()%100;
+	    n=rand()%100;
+	}while(n==0||n<10||m<10||m%n!=0);
+		printf("%d",m);
+		printf("/");
+		printf("%d",n);
+		printf("=");
+		total=m/n;
+        loopa:scanf("%d,&s");
+			  if(s==total)
+			  {
+				  printf("答对了,你真聪明!\n");
+				  count++;
+			  }
+			  else 
+			  {
+				  printf("呜呜呜，答错了,再仔细算一遍吧\n");
+				  goto
+					  loopa;
+			  }
+			  printf("恭喜通关!继续努力哦!\n");
+	}
+}
+void temp()
+{
+	int i;
+    temp1();
+	printf("是否继续挑战?Y(1)/N(0):");
+	scanf("%d",&i);
+	if(i==1)
+		temp2();
+	else
+		return;
+	i=0;
+	printf("是否继续挑战?Y(1)/N(0)");
+	scanf("%d",&i);
+	if(i==1)
+		temp3();
+	else
+		return;
+};
+int main()
+{
+	void menu();
+	int i;
+	do{
+		menu();
+		printf("请输入:");
+	    scanf("%d",&i);
+	    switch(i)
+		{
+		case 1:plus();break;
+		case 2:sub();break;
+		case 3:mul();break;
+		case 4:temp();break;
+		case 0:break;
+		}
+		printf("\n");	
+	}
+	while(i!=0);
+	printf("\n");
+	return 0;
+}
+```
+
+
 # 近期任务完成情况
 ### 一
  -http协议学完了，主要还是有个别专业名词不懂，不过正在查找资料，周天下午就能完成
