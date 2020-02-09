@@ -551,6 +551,17 @@ int main()
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+# 近期任务完成情况（三）
+### 一
+ -python还算不错吧...
+### 二
+ -数据库还在看，这进度是越来越慢。（主要还是过年那几天偷了不少懒）
+### 三
+ -Django2.0刚开始看，真就刚开始，从你给我说1.0的不行的时候开始看
+### 四
+ -pycharm我还琢磨，这是我下周的任务
+
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xiang-axiang/xiang-axiang.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
