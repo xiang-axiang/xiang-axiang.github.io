@@ -561,6 +561,13 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### 四
  -pycharm我还琢磨，这是我下周的任务
 
+# 近期任务完成情况（四）2020/2/23（未编辑完成）
+### 一
+ -MySQL还在学，打算下周装一下MySQL的服务器-客户机软件
+### 二
+ -Django没啥说的，就那样，还在看
+### 三
+ -
 
 ### Jekyll Themes
 
